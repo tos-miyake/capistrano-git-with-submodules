@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
   s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
-  s.files         = `git ls-files app lib`.split("\n")
+  s.files         = Dir['{lib,app}/**/*.rb']
   s.extra_rdoc_files = ['README.md', 'LICENSE']
   s.required_rubygems_version = ">= 1.3.6"
 
